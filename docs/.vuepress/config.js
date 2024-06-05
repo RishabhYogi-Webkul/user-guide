@@ -2,18 +2,17 @@ module.exports = {
     base: '/',
     port: '8080',
     cache: false,
-    title: 'Bagisto Documentation',
-    description: 'Bagisto Developer Portal',
+    title: 'Krayin Documentation',
+    description: 'Krayin Developer Portal',
     head: [
-        ['link', { rel: "icon", type: "image/png", href: "/favicon.ico" }],
-        ['script', { src: 'https://vikastiwari-webkul.github.io/ai-chatbot/chatbot.js', async: true}]
+        ['link', { rel: "icon", type: "image/png", href: "/favicon.ico" }]
     ],
     themeConfig: {
         smoothScroll: true,
         lastUpdated: 'Last Updated',
-        repo: 'bagisto/bagisto',
-        repoLabel: 'Contribute to Bagisto',
-        docsRepo: 'bagisto/bagisto-docs',
+        repo: 'krayin/laravel-crm',
+        repoLabel: 'Contribute to Krayin',
+        docsRepo: 'krayin/laravel-crm-docs',
         docsDir: 'docs',
         docsBranch: 'master',
         editLinks: true,
@@ -22,12 +21,10 @@ module.exports = {
         logo: '/logo.png',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Extensions', link: 'https://bagisto.com/en/extensions/' },
-            { text: 'Community Forum', link: 'https://forums.bagisto.com/' }
+        
         ],
         sidebar: {
-            '/2.0/': require('./version-configs/2.0'),
-            '/2.1.0/': require('./version-configs/2.1.0')
+            '/2.0/': require('./version-configs/2.0')
         }
     },
     markdown: {

@@ -16,89 +16,36 @@ function setVersionPrefix(children) {
 module.exports = [
     [setVersionPrefix('introduction/introductions'), 'Introduction'],
 
-    {
-        title: 'Product Types',
-        path: setVersionPrefix('products'),
-        collapsable: true,
-        children: setVersionPrefix([
-            ['products/simple', 'Simple Product'],
-            ['products/configurable', 'Configurable Product'],
-            ['products/virtual', 'Virtual Product'],
-            ['products/bundle', 'Bundle Product'],
-            ['products/grouped', 'Grouped Product'],
-            ['products/downloadable', 'Downloadable Product'],
-        ])
-    },
-    {
-        title: 'Category',
-        path: setVersionPrefix('category'),
-        collapsable: true,
-        children: setVersionPrefix([
-            ['category/overview', 'Category Overview'],
-            ['category/create-category', 'Create Category'],
-        ])
-    },
-    {
-        title: 'Attributes',
-        path: setVersionPrefix('attribute'),
-        collapsable: true,
-        children: setVersionPrefix([
-            ['attribute/overview', 'Attribute Overview'],
-            ['attribute/product-attribute', 'Create Product Attribute'],
-            ['attribute/attribute-family', 'Attribute Family'],
-            ['attribute/attribute-input', 'Attribute Input Type'],
-        ])
-    },
-    {
-        title: 'Orders',
-        path: setVersionPrefix('orders'),
-        collapsable: true,
-        children: setVersionPrefix([
-            ['orders/create-order', 'Orders'],
-            ['orders/create-invoice', 'Invoice'],
-            ['orders/create-shipment', 'Shipment'],
-            ['orders/refunds', 'Refunds'],
-        ])
-    },
-    {
-        title: 'Customers',
-        path: setVersionPrefix('customer'),
-        collapsable: true,
-        children: setVersionPrefix([
-            ['customer/create-customer', 'Customers'],
-            ['customer/customer-groups', 'Groups'],
-            ['customer/customer-reviews', 'Reviews'],
-        ])
-    },
+    [setVersionPrefix('lead/leads'), 'Leads'],
 
-    [setVersionPrefix('cms/cms-page'), 'CMS'],
+    [setVersionPrefix('quote/quotes'), 'Quotes'],
 
-    {
-        title: 'Marketing',
-        path: setVersionPrefix('marketing'),
-        collapsable: true,
-        children: setVersionPrefix([
-            ['marketing/promotions', 'Promotions'],
-            ['marketing/communications', 'Communications'],
-            ['marketing/sitemaps', 'Sitemaps'],
-        ])
-    }, 
+    [setVersionPrefix('mail/mails'), 'Mails'],
+
+    [setVersionPrefix('activity/activities'), 'Activities'],
+
+    [setVersionPrefix('contact/contacts'), 'Contacts'],
+
+    [setVersionPrefix('product/products'), 'Products'],
+
     {
         title: 'Settings',
         path: setVersionPrefix('settings'),
         collapsable: true,
         children: setVersionPrefix([
-            ['settings/locale', 'Locales'],
-            ['settings/currencies', 'Currencies'],
-            ['settings/exchange-rates', 'Exchange Rates'],
-            ['settings/inventory-source', 'Inventory Source'],
-            ['settings/channels', 'Channels'],
-            ['settings/users', 'Users'],
-            ['settings/roles', 'Roles'],
-            ['settings/themes', 'Themes'],
-            ['settings/taxes', 'Taxes'],
+            ['settings/group', 'Groups'],
+            ['settings/role', 'Roles'],
+            ['settings/user', 'Users'],
+            ['settings/pipeline', 'Pipelines'],
+            ['settings/source', 'Sources'],
+            ['settings/type', 'Types'],
+            ['settings/attribute', 'Attributes'],
+            ['settings/emailtemplate', 'Email Templates'],
+            ['settings/workflow', 'Workflows'],
+            ['settings/webforms', 'Web Forms'],
+            ['settings/tags', 'Tags'],
         ])
-    },
+    },    
 
-    [setVersionPrefix('configure/configurations'), 'Configure'],  
+    [setVersionPrefix('configure/configuration'), 'Configuration'],
 ]
